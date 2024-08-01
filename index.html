@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HeadsUp</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+    </style>
+</head>
+<body>
+    <div class="question">
+        <label for="question1">How do you feel about the current topic?</label><br>
+        <input type="radio" id="q1a" name="question1" value="I understand the current topic completely!">
+        <label for="q1a">I understand the current topic completely!</label><br>
+        <input type="radio" id="q1b" name="question1" value="I mostly understand the current topic.">
+        <label for="q1b">I mostly understand the current topic.</label><br>
+        <input type="radio" id="q1c" name="question1" value="I need help in some topic areas">
+        <label for="q1c">I need help in some topic areas</label><br>
+        <input type="radio" id="q1d" name="question1" value="I dont feel confident at all in the current topic.">
+        <label for="q1d">I dont feel confident at all in the current topic.</label><br>
+    </div>
+
+    <div class="question">
+        <label for="question2">On a scale of 1 to 5 how engaging do you find the topic?</label><br>
+        <input type="radio" id="q2a" name="question2" value=" Topic is extremely boring">
+        <label for="q2a">1, topic is extremely boring</label><br>
+        <input type="radio" id="q2b" name="question2" value=" Topic is somwhat boring">
+        <label for="q2b">2, topic is somwhat boring</label><br>
+        <input type="radio" id="q2c" name="question2" value=" Topic is somewhat engaging">
+        <label for="q2c">3, topic is somewhat engaging</label><br>
+        <input type="radio" id="q2d" name="question2" value=" Topic is very engaging">
+        <label for="q2d">4, topic is very engaging</label><br>
+        <input type="radio" id="q2e" name="question2" value=" Topic is actively engaging all the time">
+        <label for="q2e">5, topic is actively engaging all the time</label><br>
+    </div>
+
+    <div class="question">
+        <label for="question3">On a scale from 1 - 5, how stressing is the class workload?</label><br>
+        <input type="radio" id="q3a" name="question3" value="Not stressed at all, no workload">
+        <label for="q3a">1, Not stressed at all, no workload</label><br>
+        <input type="radio" id="q3b" name="question3" value=" Very little workload">
+        <label for="q3b">2, Very little workload</label><br>
+        <input type="radio" id="q3c" name="question3" value=" Perfect workload, very little stress">
+        <label for="q3c">3, Perfect workload, very little stress</label><br>
+        <input type="radio" id="q3d" name="question3" value=" Too much work, stressed">
+        <label for="q3d">4, too much work, stressed</label><br>
+        <input type="radio" id="q3e" name="question3" value=" I'm extremely stressed">
+        <label for="q3e">5, Im extremely stressed</label><br>
+    </div>
+
+    <div class="question">
+        <label for="question4">How would you like to learn?</label><br>
+        <input type="radio" id="q4a" name="question4" value="I prefer Lectures">
+        <label for="q4a">Lecture</label><br>
+        <input type="radio" id="q4b" name="question4" value="I prefer Group Work">
+        <label for="q4b">Group Work</label><br>
+        <input type="radio" id="q4c" name="question4" value="I prefer Hands-on Activities">
+        <label for="q4c">Hands-on activities</label><br>
+        <input type="radio" id="q4d" name="question4" value="I prefer Videos and Diagrams">
+        <label for="q4d">Videos/Diagrams</label><br>
+    </div>
+
+    <div class="short-answer">
+        <label for="question5">Is there anything else you would like to let the teacher know?</label><br>
+        <textarea id="question5" name="question5" rows="4" cols="50"></textarea>
+    </div>
+
+    <div class="contact-details">
+        <p>Teachers contact details</p>
+    </div>
+
+    <div class="finish-quiz">
+        <button onclick="finishQuiz()">Finish quiz</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

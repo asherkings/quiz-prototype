@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Results</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    
+
+        body {background-color: #3d9ac2;}
+
+        
+    </style>
+</head>
+<body>
+    <div id="resultsContainer">
+        <h1>Quiz Results</h1>
+        <div id="results"></div>
+    </div>
+
+    <script>
+        // Retrieve answers from localStorage
+        const answers = JSON.parse(localStorage.getItem('quizAnswers'));
+
+        // Display answers
+        const resultsDiv = document.getElementById('results');
+        if (answers) {
+            for (const [question, answer] of Object.entries(answers)) {
+                const p = document.createElement('p');
+                p.textContent = `${question}: ${answer}`;
+                resultsDiv.appendChild(p);
+            }
+        } else {
+            resultsDiv.textContent = 'No answers found.';
+        }
+    </script>
+</body>
+</html>
